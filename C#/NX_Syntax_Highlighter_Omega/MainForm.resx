@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBoxInput.Text" xml:space="preserve">
+    <value>#!/bin/bash
+# Bash script to display the number of arguments passed, the arguments passed and their concatenation.
+${ss[$r2]}
+echo -ne "The arguments passsed are: $*";
+echo "Stringed-arguments are  : ""$@";
+echo "Number of arguments are  : $#";
+cat='';
+cat='\''
+s='s'
+for i in "$@"
+do
+	cat=$cat$i;
+done;
+echo 'Concatentaion of '$#' args using "$@" is: '$cat;
+echo 'Concatentaion of '\\\\$#' args using "$@" is: '$cat;
+echo 'Concatentaion of '\\\\\$#' args using "$@" is: '$cat;
+cat='';
+for i in $*
+do
+	cat=$cat$i;
+done;
+echo 'Concatentaion of '$#' args using $* is: '$cat;
+
+
+#! /bin/bash "LL"
+# comment
+#Comment 
+# Comment  #comment fi
+2comment=
+	co=2
+echo $hello;
+
+` if `
+if [ $1 -eq "s\"ac]#" ]
+[scsc]
+" acb= ";
+if[scsc] 
+if [ $1 -eq "sac]" ] # ] 
+fi;
+if [ $1 -eq "sac]" ]; then # ] fi if
+	var="$abc";
+fi;
+'sacsac' scs'scsc'
+'scs\'sccsc'
+"#comme\"nt"
+"#comme\"nt"
+" sc #comment"
+" s "#comment" S"
+" s " #comment" S"
+" s "#" S"
+
+
+if ` $1 -eq "sac]#" `
+`scsc`
+if`scsc`
+
+#!/bin/bash
+# msquare.sh
+# Magic Square generator (odd-order squares only!)
+
+# Author: mendel cooper
+# reldate: 19 Jan. 2009
+# License: Public Domain
+# A C-program by Kwon Young Shin inspired this script.
+# See http://user.chollian.net/~brainstm/MagicSquare.htm ...
+
+# Definition: A "magic square" is a two-dimensional array
+#             of integers in which all the rows, columns,
+#             and *long* diagonals add up to the same number.
+#             Being "square," the array has the same number
+#             of rows and columns.
+# An example of a magic square of order 3 is:
+#   8  1  6   
+#   3  5  7   
+#   4  9  2   
+# All the rows, columns, and long diagonals add up to 15.
+
+
+# Globals
+EVEN=2
+MAXSIZE=31   # 31 rows x 31 cols.
+E_usage=90   # Invocation error.
+dimension=
+declare -i square
+
+usage_message ()
+{
+  echo "Usage: $0 square-size"
+  echo "   ... where \"square-size\" is an ODD integer"
+  echo "       in the range 3 - 31."
+  #  Actually works for squares up to order 159,
+  #+ but large squares will not display pretty-printed in a term window.
+  #  Try increasing MAXSIZE, above.
+  exit $E_usage
+}
+
+
+calculate ()       # Here's where the actual work gets done.
+{
+  local row col index dimadj j k cell_val=1
+  dimension=$1
+
+  let "dimadj = $dimension * 3"; let "dimadj /= 2"   # x 1.5, then truncate.
+
+  for ((j=0; j &lt; dimension; j++))
+  do
+    for ((k=0; k &lt; dimension; k++))
+    do  # Calculate indices, then convert to 1-dim. array index.
+        # Bash doesn't support multidimensional arrays. Pity.
+      let "col = $k - $j + $dimadj"; let "col %= $dimension"
+      let "row = $j * 2 - $k + $dimension"; let "row %= $dimension"
+      let "index = $row*($dimension) + $col"
+      square[$index]=cell_val; ((cell_val++))
+    done
+  done
+}     # Plain math, no visualization required.
+
+
+print_square ()               # Output square, one row at a time.
+{
+  local row col idx d1
+  let "d1 = $dimension - 1"   # Adjust for zero-indexed array.
+ 
+  for row in $(seq 0 $d1)
+  do
+
+    for col in $(seq 0 $d1)
+    do
+      let "idx = $row * $dimension + $col"
+      printf "%3d " "${square[idx]}"; echo -n "  "
+    done   # Displays up to 13-order neatly in 80-column term window.
+
+    echo   # Newline after each row.
+  done
+}
+
+
+#################################################
+if [[ -z "$1" ]] || [[ "$1" -gt $MAXSIZE ]]
+then
+  usage_message
+fi
+
+let "test_even = $1 % $EVEN"
+if [ $test_even -eq 0 ]
+then           # Can't handle even-order squares.
+  usage_message
+fi
+
+calculate $1
+print_square   # echo "${square[@]}"   # DEBUG
+
+exit $?
+#################################################
+
+
+# Exercises:
+# ---------
+# 1) Add a function to calculate the sum of each row, column,
+#    and *long* diagonal. The sums must match.
+#    This is the "magic constant" of that particular order square.
+# 2) Have the print_square function auto-calculate how much space
+#    to allot between square elements for optimized display.
+#    This might require parameterizing the "printf" line.
+# 3) Add appropriate functions for generating magic squares
+#    with an *even* number of rows/columns.
+#    This is non-trivial(!).
+#    See the URL for Kwon Young Shin, above, for help.
+
+#!/bin/bash
+# fifteen.sh
+
+# Classic "Fifteen Puzzle"
+# Author: Antonio Macchi
+# Lightly edited and commented by ABS Guide author.
+# Used in ABS Guide with permission. (Thanks!)
+
+#  The invention of the Fifteen Puzzle is attributed to either
+#+ Sam Loyd or Noyes Palmer Chapman.
+#  The puzzle was wildly popular in the late 19th-century.
+
+#  Object: Rearrange the numbers so they read in order,
+#+ from 1 - 15:   ________________
+#                |  1   2   3   4 |
+#                |  5   6   7   8 |
+#                |  9  10  11  12 |
+#                | 13  14  15     |
+#                 ----------------
+
+
+#######################
+# Constants           #
+  SQUARES=16          #
+  FAIL=70             #
+  E_PREMATURE_EXIT=80 #
+#######################
+
+
+########
+# Data #
+########
+
+Puzzle=( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 " " )
+
+
+#############
+# Functions #
+#############
+
+function swap
+{
+  local tmp
+
+  tmp=${Puzzle[$1]}
+  Puzzle[$1]=${Puzzle[$2]}
+  Puzzle[$2]=$tmp
+}
+
+
+function Jumble
+{ # Scramble the pieces at beginning of round.
+  local i pos1 pos2
+
+  for i in {1..100}
+  do
+    pos1=$(( $RANDOM % $SQUARES))
+    pos2=$(( $RANDOM % $SQUARES ))
+    swap $pos1 $pos2
+  done
+}
+
+
+function PrintPuzzle
+{
+  local i1 i2 puzpos
+  puzpos=0
+
+  clear
+  echo "Enter  quit  to exit."; echo   # Better that than Ctl-C.
+
+  echo ",----.----.----.----."   # Top border.
+  for i1 in {1..4}
+  do
+    for i2 in {1..4} 
+    do
+      printf "| %2s " "${Puzzle[$puzpos]}"
+      (( puzpos++ ))
+    done
+    echo "|"                     # Right-side border.
+    test $i1 = 4 || echo "+----+----+----+----+"
+  done
+  echo "'----'----'----'----'"   # Bottom border.
+}
+
+
+function GetNum
+{ # Test for valid input.
+  local puznum garbage
+
+  while true
+  do 
+	  echo "Moves: $moves" # Also counts invalid moves.
+    read -p "Number to move: " puznum garbage
+      if [ "$puznum" = "quit" ]; then echo; exit $E_PREMATURE_EXIT; fi
+    test -z "$puznum" -o -n "${puznum//[0-9]/}" &amp;&amp; continue
+    test $puznum -gt 0 -a $puznum -lt $SQUARES &amp;&amp; break
+  done
+  return $puznum
+}
+
+
+function GetPosFromNum
+{ # $1 = puzzle-number
+  local puzpos
+
+  for puzpos in {0..15}
+  do
+    test "${Puzzle[$puzpos]}" = "$1" &amp;&amp; break
+  done
+  return $puzpos
+}
+
+
+function Move
+{ # $1=Puzzle-pos
+  test $1 -gt 3 &amp;&amp; test "${Puzzle[$(( $1 - 4 ))]}" = " "\
+       &amp;&amp; swap $1 $(( $1 - 4 )) &amp;&amp; return 0
+  test $(( $1%4 )) -ne 3 &amp;&amp; test "${Puzzle[$(( $1 + 1 ))]}" = " "\
+       &amp;&amp; swap $1 $(( $1 + 1 )) &amp;&amp; return 0
+  test $1 -lt 12 &amp;&amp; test "${Puzzle[$(( $1 + 4 ))]}" = " "\
+       &amp;&amp; swap $1 $(( $1 + 4 )) &amp;&amp; return 0
+  test $(( $1%4 )) -ne 0 &amp;&amp; test "${Puzzle[$(( $1 - 1 ))]}" = " " &amp;&amp;\
+       swap $1 $(( $1 - 1 )) &amp;&amp; return 0
+  return 1
+}
+
+
+function Solved
+{
+  local pos
+
+  for pos in {0..14}
+  do
+    test "${Puzzle[$pos]}" = $(( $pos + 1 )) || return $FAIL
+    # Check whether number in each square = square number.
+  done
+  return 0   # Successful solution.
+}
+
+
+################### MAIN () ########################
+moves=0
+Jumble
+
+while true   # Loop continuously until puzzle solved.
+do
+  echo; echo
+  PrintPuzzle
+  echo
+  while true
+  do
+    GetNum
+    puznum=$?
+    GetPosFromNum $puznum
+    puzpos=$?
+    ((moves++))
+    Move $puzpos &amp;&amp; break
+  done
+  Solved &amp;&amp; break
+done
+
+echo;echo
+PrintPuzzle
+echo; echo "BRAVO!"; echo
+
+exit 0
+####################################################
+
+#  Exercise:
+#  --------
+#  Rewrite the script to display the letters A - O,
+#+ rather than the numbers 1 - 15.</value>
+  </data>
+</root>

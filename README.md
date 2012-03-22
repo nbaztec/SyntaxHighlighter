@@ -1,6 +1,7 @@
 # SyntaxHighlighter
 
-SyntaxHighlighter
+SyntaxHighlighter is a light-weight extensible syntax highlighter. Currently supports common languages like C, C++, C#, SQL, Python, Java and the versatile Bash scripting. 
+The output formats supported are HTML and RTF and the application is a multi-port b/w C# and Python.
 
 * The application is available both as a standalone and as a library. 
 * All the features are fully customizable including the highlight rules, highlight colors, highlight fonts and the library interface can be used with or without additional parameters. 
