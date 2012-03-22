@@ -10,7 +10,7 @@ The output formats supported are HTML and RTF and the application is a multi-por
 * Wrapper for Python 's `re` module to support multiple capture groups.
 
 
-## Depedencies
+## Requisites
 
 * C# 
  * .NET Framework 3.5
