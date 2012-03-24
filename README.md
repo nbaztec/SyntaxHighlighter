@@ -36,7 +36,7 @@ along with SyntaxHighlighter.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Running SyntaxHighlighter
 
-*C#
+* C#
 	Form based selection on the executable.
 	
 * Python
